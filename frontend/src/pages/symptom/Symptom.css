@@ -1,0 +1,162 @@
+.symptom_list {
+    background-color: #F6F6F6;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.symptom_inside {
+    margin-top: 10vh;
+    margin-left: 3vw;
+    transition: transform 0.3s ease;
+    height: 100%;
+    flex: 1;
+}
+
+.symptom_form_container {
+    justify-content: center;
+    width: 100%;
+}
+
+.symptom_form {
+    /* border: 1px solid #ccc; */
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    /* background-color: #fff; */
+    width: 60vw;
+}
+
+.symptom_id {
+    width: 70vw;
+    max-width: 1000px;
+    min-width: 320px;
+    margin: 0 auto 20px;
+    padding: 16px;
+    background: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.symptom_title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #591C00;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.symptom_add {
+    background-color: #426B1F;
+    color: white;
+    border: #426B1F solid 1px;
+    padding: 1px;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 30px;
+    width: 110px;
+}
+
+.delete_button_symptom {
+    background-color: #d25b5b;
+    border: none;
+    padding: 1px;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 30px;
+    width: 110px;
+    color: white;
+}
+
+.save_button_symptom {
+    background-color: #5bd2b8;
+    border: none;
+    padding: 1px;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 30px;
+    width: 110px;
+}
+
+.symptom_form_date {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex-shrink: 0;
+}
+
+.symptom_form_date label {
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+}
+
+.button_all_symptom {
+    display: flex;
+    gap: 20px;
+}
+
+.symptom_form_date input {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: #fafafa;
+    transition: border-color 0.2s ease;
+}
+
+.symptom_form_date input:focus {
+    border-color: #007bff;
+    outline: none;
+    background-color: #fff;
+}
+
+.symptom_form input[type="text"] {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.symptom_form_textarea {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 45vw;
+}
+
+.symptom_form_inside {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.symptom_form_inside input[type="text"] {
+    width: 60vw;
+    height: 20px;
+}
+
+.symptom_form_date input[type="date"] {
+    height: 20px;
+
+}
+
+.symptom_form_date {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.symptom_inside.shifted {
+    transform: translateX(250px);
+}

@@ -1,0 +1,27 @@
+.register_headerall {
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #E2E3E0;
+}
+
+.register_header_button button{
+    background-color: #426B1F;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 92px;
+    height: 27px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Newsreader, serif;
+}

@@ -1,0 +1,385 @@
+.header_sideall {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Newsreader, serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  background-color: #E2E3E0;
+  padding: 10px;
+}
+
+.side-menu {
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 86vh;
+  background-color: #e2e3e0;
+  transition: left 0.3s ease;
+  z-index: 999;
+}
+
+/* .logo_img_menu{
+  align-items: center;
+} */
+.page-wrapper {
+  transition: transform 0.3s ease;
+}
+
+.page-wrapper.menu-open .page-content {
+  transform: translateX(250px);
+}
+
+.logo_burger_menu {
+
+  transition: left 0.3s ease;
+  z-index: 1000;
+
+}
+
+.logo_burger_menu.open {
+  left: 250px;
+}
+
+.menu-toggle {
+  position: fixed;
+  top: 10px;
+  left: 30px;
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+.menu-toggle.open {
+  left: 250px;
+}
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 85vh;
+  background-color: #E2E3E0;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+  transition: left 0.3s ease;
+  z-index: 999;
+}
+
+.side-menu.active {
+  left: 0;
+}
+
+@media(max-width: 768px) {
+  .header_sideall {
+    height: 50px;
+    font-size: 16px;
+  }
+
+  .side-menu {
+    width: 200px;
+  }
+
+  .menu-toggle {
+    top: 5px;
+    left: 10px;
+  }
+
+  .logo_burger_menu {
+    top: 5px;
+    left: 10px;
+  }
+
+  .page-wrapper.menu-open .page-content {
+    transform: translateX(200px);
+  }
+
+  .side-menu ul {
+    padding: 10px;
+  }
+
+  .side-menu li {
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+  }
+
+  .side-menu a {
+    font-size: 16px;
+  }
+
+  .side-menu a:hover {
+    color: #426B1F;
+  }
+
+  .side-menu li:hover {
+    background-color: #dcdcdc;
+  }
+
+  .side-menu li.active {
+    background-color: #426B1F;
+    color: white;
+  }
+
+  .side-menu li.active a {
+    color: white;
+  }
+
+  .side-menu li.active:hover {
+    background-color: #2E4D14;
+  }
+
+  .side-menu li.active a:hover {
+    color: white;
+  }
+
+  .side-menu li a {
+    color: black;
+    text-decoration: none;
+  }
+
+  .side-menu li a:hover {
+    color: #426B1F;
+  }
+
+  .side-menu li {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+  }
+
+  .side-menu li img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .side-menu li span {
+    font-size: 16px;
+  }
+
+  .side-menu li:hover {
+    background-color: #dcdcdc;
+  }
+
+  .side-menu li.active {
+    background-color: #426B1F;
+    color: white;
+  }
+
+  .side-menu li.active a {
+    color: white;
+  }
+
+  .side-menu li.active:hover {
+    background-color: #2E4D14;
+  }
+
+  .side-menu li.active a:hover {
+    color: white;
+  }
+
+  .side-menu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .side-menu li {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+  }
+
+  .side-menu li:hover {
+    background-color: #dcdcdc;
+  }
+
+  .side-menu li.active {
+    background-color: #426B1F;
+    color: white;
+  }
+
+  .side-menu li.active a {
+    color: white;
+  }
+
+  .side-menu li.active:hover {
+    background-color: #2E4D14;
+  }
+
+  .side-menu li.active a:hover {
+    color: white;
+  }
+
+  .side-menu li a {
+    color: black;
+    text-decoration: none;
+  }
+
+  .side-menu li a:hover {
+    color: #426B1F;
+  }
+
+  .side-menu li img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .side-menu li span {
+    font-size: 16px;
+  }
+
+  .side-menu li {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+  }
+
+  .side-menu li img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .side-menu li span {
+    font-size: 16px;
+  }
+
+  .side-menu li:hover {
+    background-color: #dcdcdc;
+  }
+
+  .side-menu li.active {
+    background-color: #426B1F;
+    color: white;
+  }
+
+  .side-menu li.active a {
+    color: white;
+  }
+
+  .side-menu li.active:hover {
+    background-color: #2E4D14;
+  }
+
+  .side-menu li.active a:hover {
+    color: white;
+  }
+
+  .side-menu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .side-menu li {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+  }
+
+  .side-menu li:hover {
+    background-color: #dcdcdc;
+  }
+
+  .side-menu li.active {
+    background-color: #426B1F;
+    color: white;
+  }
+
+  .side-menu li.active a {
+    color: white;
+  }
+
+  .side-menu li.active:hover {
+    background-color: #2E4D14;
+  }
+
+  .side-menu li.active a:hover {
+    color: white;
+  }
+
+  .side-menu li a {
+    color: black;
+    text-decoration: none;
+  }
+
+  .side-menu li a:hover {
+    color: #426B1F;
+  }
+
+  .side-menu li img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .side-menu li span {
+    font-size: 16px;
+  }
+
+  .side-menu li {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+  }
+
+  .side-menu li img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .news {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .news h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #426B1F;
+  }
+
+  .news p {
+    font-size: 16px;
+    color: #591C00;
+    text-align: center;
+    max-width: 300px;
+  }
+
+  .img_mainpage {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .img_mainpage:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
+
+  .img_mainpage:active {
+    transform: scale(0.95);
+    transition: transform 0.1s ease;
+  }
+}

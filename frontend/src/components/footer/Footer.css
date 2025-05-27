@@ -1,0 +1,22 @@
+.footer_all{ 
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Newsreader, serif;
+    font-size: 15px;
+    background-color: #E2E3E0;
+}
+.footer_all a{
+    text-decoration: none;
+    color: #426B1F;
+    style: none;
+    list-style: none;
+}
+.footer_all a:hover{
+    color: #2E4D14;
+}
