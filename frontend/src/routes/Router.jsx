@@ -6,6 +6,7 @@ import Forgetpassword from "../pages/auth/forgetpassword/Forgetpassword";
 import Symptom from "../pages/symptom/Symptom";
 import Layout from "../pages/mainpage/main/Layout";
 import "./Router.css";
+import Discussion from "../pages/discussion/Discussion";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,11 @@ const router = createBrowserRouter([
   {
     path: "/symptom",
     element: <Symptom />,
+  },
+
+  {
+    path: "/discussion",
+    element: <Discussion />
   }
 
 ]);

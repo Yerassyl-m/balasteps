@@ -17,7 +17,16 @@
   background-color: #E2E3E0;
   padding: 10px;
 }
-
+.logo_menu_side{
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 1000;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 15px 20px;
+}
 .side-menu {
   box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
   position: fixed;
@@ -30,9 +39,19 @@
   z-index: 999;
 }
 
-/* .logo_img_menu{
-  align-items: center;
-} */
+.link_menuside {
+  cursor: pointer;
+}
+
+.link_menuside button {
+  background: transparent;
+  color: #591C00;
+  font-size: 16px;
+  border: none;
+  padding: 4px 0px;
+  cursor: pointer;
+}
+
 .page-wrapper {
   transition: transform 0.3s ease;
 }
@@ -42,10 +61,8 @@
 }
 
 .logo_burger_menu {
-
   transition: left 0.3s ease;
   z-index: 1000;
-
 }
 
 .logo_burger_menu.open {

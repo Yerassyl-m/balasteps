@@ -24,6 +24,11 @@ function Headerside({ isOpen, setIsOpen }) {
     setIsOpen(false);
   };
 
+  const handleClickLogo3 = () => {
+    navigate("/discussion");
+    setIsOpen(false);
+  };
+
 
   React.useEffect(() => {
     document.body.style.overflow = isOpen ? "hidden" : "auto";
@@ -43,32 +48,34 @@ function Headerside({ isOpen, setIsOpen }) {
           <div className={`side-menu ${isOpen ? "active" : ""}`}>
             <button onClick={handleClickLogo} className="logo_burgermenu" style={{ border: "none", background: "none", padding: 0 }}>
               <div className="logo_burger_menu">
-                <img width="200px" src={logo_dashboard} alt="Logo" />
+                <img className="logo_menu_side" width="200px" src={logo_dashboard} alt="Logo" />
               </div>
             </button>
 
-            <ul>
-              <li>
-                <img src={dashboard} width="20px" alt="" />
-                <a href={handleClickLogo2}>Symptom Tracker</a>
-              </li>
-              <li>
-                <img src={comment} width="20px" alt="" />
-                <a href="#">Discussion Forum</a>
-              </li>
-              <li>
-                <img src={information_dashboard} width="20px" alt="" />
-                <a href="#">Information Hub</a>
-              </li>
-              <li>
-                <img src={marketplace_dashboard} width="20px" alt="" />
-                <a href="#">Marketplace</a>
-              </li>
-              <li>
-                <img src={question_circle} width="20px" alt="" />
-                <a href="#">iKomek AI Assistant</a>
-              </li>
-            </ul>
+            <div className="link_menuside">
+              <ul>
+                <li style={{ padding: "5px 25px" }}>
+                  <img src={dashboard} width="20px" alt="" />
+                  <button onClick={handleClickLogo2}>Symptom Tracker</button>
+                </li>
+                <li style={{ padding: "5px 25px" }}>
+                  <img src={comment} width="20px" alt="" />
+                  <button onClick={handleClickLogo3}>Discussion Forum</button>
+                </li>
+                <li style={{ padding: "5px 20px" }}>
+                  <img src={information_dashboard} width="20px" alt="" />
+                  <a onClick={handleClickLogo}>Information Hub</a>
+                </li>
+                <li style={{ padding: "5px 20px" }}>
+                  <img src={marketplace_dashboard} width="20px" alt="" />
+                  <a href="#">Marketplace</a>
+                </li>
+                <li style={{ padding: "5px" }}>
+                  <img src={question_circle} width="20px" alt="" />
+                  <a href="#">iKomek AI Assistant</a>
+                </li>
+              </ul>
+            </div>
 
           </div>
 
