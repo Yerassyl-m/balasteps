@@ -38,7 +38,18 @@
   transition: left 0.3s ease;
   z-index: 999;
 }
-
+.header_right_side{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-right: 20px;
+}
+.header_link_button{
+  gap : 30px;
+  display: flex;
+  cursor: pointer;
+}
 .link_menuside {
   cursor: pointer;
 }
@@ -50,6 +61,17 @@
   border: none;
   padding: 4px 0px;
   cursor: pointer;
+}
+.header_let_button{
+  background-color: #426B1F;
+  color: white;
+  border: #D9D9D9 solid 1px;
+  border-radius: 8px;
+  cursor: pointer;
+  height: 10px;
+  padding: 1px 20px;
+  font-size: medium;
+  height: 40px;
 }
 
 .page-wrapper {

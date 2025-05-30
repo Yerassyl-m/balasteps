@@ -9,6 +9,7 @@ import logo_dashboard from "../../assets/logo_dashboard.png";
 import marketplace_dashboard from "../../assets/marketplace_dashboard.png";
 import information_dashboard from "../../assets/information_dashboard.png";
 import question_circle from "../../assets/question_circle.png";
+import notification from "../../assets/notification.png"
 
 function Headerside({ isOpen, setIsOpen }) {
   const navigate = useNavigate();
@@ -28,6 +29,12 @@ function Headerside({ isOpen, setIsOpen }) {
     navigate("/discussion");
     setIsOpen(false);
   };
+
+  const handleClickLogo4 = () => {
+    navigate("/login");
+    setIsOpen(false);
+  };
+
 
 
   React.useEffect(() => {
@@ -83,12 +90,22 @@ function Headerside({ isOpen, setIsOpen }) {
         </div>
       </div>
 
-      <div className="header_side_button">
-        <a href="#" className="header_side_account">
-          <img src={account} alt="Account" />
-        </a>
-      </div>
+      <div className="header_right_side">
 
+        <div className="header_link_button">
+          <a href="#" className="header_side_account">
+            <img src={notification} alt="Account" />
+          </a>
+
+          <a onClick={handleClickLogo4} className="header_side_notification">
+            <img src={account} alt="Account" />
+          </a>
+        </div>
+
+        <button onClick={handleClickLogo} className="header_let_button">
+          Log out
+        </button>
+      </div>
     </div>
   );
 }
